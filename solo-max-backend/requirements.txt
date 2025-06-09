@@ -1,0 +1,16 @@
+Flask
+Flask-CORS
+Flask-SQLAlchemy
+Flask-Login
+werkzeug
+python-dotenv
+requests
+beautifulsoup4
+selenium
+openai==0.28.0
+Pillow
+pytesseract
+APScheduler
+cryptography
+msal
+azure-identity
