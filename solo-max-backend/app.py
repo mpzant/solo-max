@@ -50,7 +50,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///solo_max.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Enable CORS for React frontend
-CORS(app, supports_credentials=True, origins=['http://localhost:3000'])
+CORS(app, supports_credentials=True, origins=['http://localhost:3000', 'https://solo-max-tau.vercel.app'])
 
 # Initialize extensions
 db = SQLAlchemy(app)
