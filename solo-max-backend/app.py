@@ -40,7 +40,9 @@ import random
 import urllib.parse
 
 # Load environment variables
-load_dotenv()
+# Only load .env file in development
+if os.environ.get('RENDER') != 'true':
+    load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'your-secret-key-here')
